@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Lobster&display=swap");
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: "Heebo", "Arial", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
+  padding: 0 93px 0 93px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  box-shadow: 10px 0 19px -17px #000, -10px 0 19px -17px #000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  position: absolute;
+  margin: 2px 0 0 -2px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 81px;
+  margin: 16px 0 0 0;
+}
+.nav-list__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 0 48px;
+}
+.nav-list__item--current {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #1a7f72;
+}
+.nav-list__item:hover {
+  color: #1a7f72;
+}
+
+.hero {
+  min-height: 747px;
+  background-image: url("../img/hero/background1200x707.jpg");
+  background-repeat: no-repeat;
+  background-position: center -76px;
+  background-size: 1200px 739px;
+}
+.hero__title {
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 43px;
+  padding: 42px 234px 0;
+  margin: 0;
+  line-height: 130%;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  color: #fff;
+}
+.hero__desc {
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 166px;
+  margin: 12px 0 0 0;
+}
+.hero__link {
+  display: block;
+  margin: 33px auto 0;
+  width: max-content;
+  background-color: #159685;
+  box-shadow: 0px 12.5px 25px rgba(21, 113, 101, 0.2);
+  border-radius: 31.25px;
+  padding: 12px 60px;
+  color: #fff;
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 19px;
+}
+.hero__img {
+  margin: 17px auto 0;
+}
+/*# sourceMappingURL=style.css.map */
