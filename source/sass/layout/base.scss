@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+.page__body {
+  font-family: "Heebo", "Arial", sans-serif;
+}
+
 .container {
   margin: 0 auto;
   height: 100%;
-  width: 100%;
-  max-width: 1920px;
+  width: 1200px;
+  padding: 0 93px 0 93px;
 }
 
 img {
@@ -20,7 +24,7 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: $white;
 }
