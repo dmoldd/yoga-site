@@ -1,0 +1,32 @@
+.practice {
+  background-color: $bgcolor;
+}
+
+.practice .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.practice__title {
+  margin: 0;
+  padding: 33px 262px 0;
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 43px;
+}
+
+.practice__desc {
+  padding: 0 262px 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.practice__img {
+  // width: 506px;
+  margin: 44px 0 0 0;
+  width: max-content;
+  height: max-content;
+}

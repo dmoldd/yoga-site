@@ -1,9 +1,10 @@
 .hero {
-  min-height: 747px;
-  background-image: url("../img/hero/background1200x707.jpg");
+  min-height: 740px;
+  background-image: url("../img/hero/background1200x707.png");
   background-repeat: no-repeat;
   background-position: center -76px;
   background-size: 1200px 739px;
+  background-color: $bgcolor;
 
   &__title {
     text-align: center;
