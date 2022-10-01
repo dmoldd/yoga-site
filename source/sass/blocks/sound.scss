@@ -1,0 +1,26 @@
+.sound {
+  background-color: $bgcolor;
+}
+
+.sound .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sound__title {
+  margin: 27px 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  width: 100%;
+  font-family: "Lobster";
+  font-size: 43px;
+}
+
+.sound__desc {
+  text-align: center;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0 129px;
+  margin: 13px 0 0 0;
+}
