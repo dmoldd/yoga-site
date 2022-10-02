@@ -1,3 +1,5 @@
+/* colors */
+
 $white: #ffffff;
 $black: #000000;
 $brown-op08: rgba(0 0 0 / 0.8);
@@ -11,5 +13,11 @@ $egreen: #81ebdb;
 $gray: rgba(26 127 114 / 1);
 $gradient-gray-white: linear-gradient(180deg, #b1aeb4 0%, rgb(177 174 180 / 0) 100%);
 $bgcolor: #ddf4ee;
+$bgcolorgrad: linear-gradient(90deg, #c3e2de 27%, #cff1ed 49%, #edfbf9 97%);
+$bordergrad: linear-gradient(90deg, #1E9787 0%, rgba(26 127 114 / 0.38) 49%, rgba(26 127 114 / 0.13) 73%, rgba(26 127 114 / 0.04) 91%);
 $ultitle: rgba(0 0 0 / 0.8);
 $uldesc: rgba(0 0 0 / 0.5);
+$soundbtn: linear-gradient(180deg, #259385 0%, #159685 100%);
+$soundbtnbox-shadow: 0 15px 18px rgba(179 228 221 / 0.3), 0 6px 15px rgba(26 127 114 / 0.23);
+
+/* vars */

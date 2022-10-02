@@ -150,6 +150,8 @@ template {
   display: none;
 }
 
+/* colors */
+/* vars */
 * {
   box-sizing: border-box;
 }
@@ -162,7 +164,11 @@ template {
   margin: 0 auto;
   height: 100%;
   width: 1200px;
-  padding: 0 93px 0 93px;
+  padding: 0 93px;
+}
+
+.container--short {
+  padding: 0 74px;
 }
 
 img {
@@ -472,9 +478,140 @@ a {
   margin: 13px 0 0 0;
 }
 
+.sound__img {
+  display: block;
+  width: 435px;
+  height: 424px;
+  margin: 34px 0 0 157px;
+}
+
 .sound-list {
-  margin: 64px 0 0 0;
+  margin: 88px 0 0 0;
   padding: 0 0 0 0;
   list-style-type: none;
+}
+
+.sound-list__item {
+  position: relative;
+  background: url("../img/svg/bgsong.svg") left 20px center, linear-gradient(90deg, #c3e2de 27%, #cff1ed 49%, #edfbf9 97%) padding-box, linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 49%, rgba(26, 127, 114, 0.13) 73%, rgba(26, 127, 114, 0.04) 91%) border-box; /* border*/
+  background-repeat: no-repeat;
+  padding: 20px 26px 18px 26px;
+  margin: 0 0 31px 0;
+  min-width: 406px;
+  border: 1.25px solid transparent;
+  border-radius: 10px;
+  min-height: 89px;
+}
+
+.sound-list__title {
+  margin: 0 0 0 0;
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sound-list__desc {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 8px 0 0 0;
+}
+
+.sound-list__song {
+  position: absolute;
+  top: 21px;
+  right: 23px;
+  display: block;
+  border-radius: 50%;
+  padding: 15px 15px 14px 17px;
+  background: linear-gradient(180deg, #259385 0%, #159685 100%);
+  box-shadow: 0 15px 18px rgba(179, 228, 221, 0.3), 0 6px 15px rgba(26, 127, 114, 0.23);
+}
+
+.best-of-meditations {
+  background-color: #ddf4ee;
+  margin: 165px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  min-height: 821px;
+}
+
+.best-of-meditations .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.best-of-meditations__title {
+  margin: 0 0 0 0;
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
+}
+
+.best-of-meditations__desc {
+  margin: 18px 0 0 0;
+  padding: 0 156px;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.best-of-meditations__img {
+  position: absolute;
+  top: 135px;
+  left: 495px;
+  width: 211px;
+  height: 501px;
+}
+
+.meditations-list {
+  list-style-type: none;
+  width: 375px;
+  margin: 45px 0 0 0;
+}
+
+.meditations-list--left {
+  text-align: right;
+  padding: 0 0 0 0;
+}
+
+.meditations-list--right {
+  text-align: left;
+  padding: 0 0 0 0;
+}
+
+.meditations-list__item {
+  min-height: 125px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 0 64px 0;
+}
+
+.meditations-list__title {
+  margin: 20px 37px 0 0;
+  padding: 0 0 0 0;
+}
+
+.meditations-list__desc {
+  margin: 12px 0 0 0;
+  padding: 0px 21px 0 23px;
+}
+
+.meditations-list__item--right .meditations-list__title {
+  margin: 30px 0 0 27px;
+  padding: 0 0 0 0;
+}
+.meditations-list__item--right .meditations-list__desc {
+  margin: 12px 0 0 0;
+  padding: 0px 21px 0 23px;
 }
 /*# sourceMappingURL=style.css.map */

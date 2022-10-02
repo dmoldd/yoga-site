@@ -1,0 +1,41 @@
+.best-of-meditations {
+  background-color: $bgcolor;
+  margin: 165px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  min-height: 821px;
+}
+
+.best-of-meditations .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.best-of-meditations__title {
+  margin: 0 0 0 0;
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
+}
+
+.best-of-meditations__desc {
+  margin: 18px 0 0 0;
+  padding: 0 156px;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.best-of-meditations__img {
+  position: absolute;
+  top: 135px;
+  left: 495px;
+  width: 211px;
+  height: 501px;
+}

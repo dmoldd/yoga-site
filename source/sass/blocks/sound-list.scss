@@ -1,5 +1,50 @@
 .sound-list {
-  margin: 64px 0 0 0;
+  margin: 88px 0 0 0;
   padding: 0 0 0 0;
   list-style-type: none;
+}
+
+.sound-list__item {
+  position: relative;
+  // background: $bgcolorgrad;
+  background:
+    url("../img/svg/bgsong.svg") left 20px center, /* background*/
+    $bgcolorgrad padding-box, /* background*/
+    $bordergrad border-box; /* border*/
+  background-repeat: no-repeat;
+  padding: 20px 26px 18px 26px;
+  margin: 0 0 31px 0;
+  min-width: 406px;
+  border: 1.25px solid transparent;
+  border-radius: 10px;
+  min-height: 89px;
+
+}
+
+.sound-list__title {
+  margin: 0 0 0 0;
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: $brown-op08;
+}
+
+.sound-list__desc {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  color: $brown-op05;
+  margin: 8px 0 0 0;
+}
+
+.sound-list__song {
+  position: absolute;
+  top: 21px;
+  right: 23px;
+  display: block;
+  border-radius: 50%;
+  padding: 15px 15px 14px 17px;
+  background: $soundbtn;
+  box-shadow: $soundbtnbox-shadow;
 }

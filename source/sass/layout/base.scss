@@ -10,7 +10,11 @@
   margin: 0 auto;
   height: 100%;
   width: 1200px;
-  padding: 0 93px 0 93px;
+  padding: 0 93px;
+}
+
+.container--short {
+  padding: 0 74px;
 }
 
 img {

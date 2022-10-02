@@ -1,0 +1,44 @@
+.meditations-list {
+  list-style-type: none;
+  width: 375px;
+  margin: 45px 0 0 0;
+}
+
+.meditations-list--left {
+  text-align: right;
+  padding: 0 0 0 0;
+}
+
+.meditations-list--right {
+  text-align: left;
+  padding: 0 0 0 0;
+}
+
+.meditations-list__item {
+  min-height: 125px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 0 64px 0;
+}
+
+.meditations-list__title {
+  margin: 20px 37px 0 0;
+  padding: 0 0 0 0;
+}
+
+.meditations-list__desc {
+  margin: 12px 0 0 0;
+  padding: 0px 21px 0 23px;
+}
+
+.meditations-list__item--right {
+  .meditations-list__title {
+    margin: 30px 0 0 27px;
+    padding: 0 0 0 0;
+  }
+
+  .meditations-list__desc {
+    margin: 12px 0 0 0;
+    padding: 0px 21px 0 23px;
+  }
+}
