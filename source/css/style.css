@@ -532,7 +532,7 @@ a {
 }
 
 .best-of-meditations {
-  background-color: #ddf4ee;
+  background-color: #7bc9b1;
   margin: 165px 0 0 0;
   display: flex;
   flex-wrap: wrap;
@@ -579,23 +579,6 @@ a {
   margin: 45px 0 0 0;
 }
 
-.meditations-list--left {
-  text-align: right;
-  padding: 0 0 0 0;
-}
-
-.meditations-list--right {
-  text-align: left;
-  padding: 0 0 0 0;
-}
-
-.meditations-list__item {
-  min-height: 125px;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 0 0 64px 0;
-}
-
 .meditations-list__title {
   margin: 20px 37px 0 0;
   padding: 0 0 0 0;
@@ -603,15 +586,96 @@ a {
 
 .meditations-list__desc {
   margin: 12px 0 0 0;
-  padding: 0px 21px 0 23px;
+  padding: 0 21px 0 23px;
 }
 
-.meditations-list__item--right .meditations-list__title {
-  margin: 30px 0 0 27px;
+.meditations-list--left {
+  text-align: right;
   padding: 0 0 0 0;
 }
-.meditations-list__item--right .meditations-list__desc {
+.meditations-list--left .meditations-list__item {
+  background: linear-gradient(270deg, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box, linear-gradient(270deg, #378377 -5.44%, rgba(176, 234, 226, 0) 104.61%) border-box; /* border*/
+  border: 2px solid transparent;
+  min-height: 125px;
+  border-radius: 10px;
+  margin: 0 0 64px 0;
+}
+.meditations-list--left .meditations-list__item:first-child {
+  padding: 20px 0 10px 0;
+}
+.meditations-list--left .meditations-list__item:first-child .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 33px 0 150px;
+}
+.meditations-list--left .meditations-list__item:first-child .meditations-list__desc {
+  margin: 13px 0 0px 0;
+  padding: 0 22px 0 62px;
+}
+.meditations-list--left .meditations-list__item:nth-child(2) {
+  padding: 31px 0 10px 0;
+}
+.meditations-list--left .meditations-list__item:nth-child(2) .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 32px 0 150px;
+}
+.meditations-list--left .meditations-list__item:nth-child(2) .meditations-list__desc {
+  margin: 10px 0 0 0px;
+  padding: 0 23px 0 33px;
+}
+.meditations-list--left .meditations-list__item:last-child {
+  padding: 18px 0 10px 0;
+}
+.meditations-list--left .meditations-list__item:last-child .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 39px 0 150px;
+}
+.meditations-list--left .meditations-list__item:last-child .meditations-list__desc {
   margin: 12px 0 0 0;
-  padding: 0px 21px 0 23px;
+  padding: 0 24px 0 43px;
+}
+
+.meditations-list--right {
+  text-align: left;
+  padding: 0 0 0 0;
+}
+.meditations-list--right .meditations-list__item {
+  background: linear-gradient(to right, #C3EEE8 26.37%, rgba(195, 226, 222, 0.75) 63.87%, rgba(231, 243, 242, 0.4) 103.6%) padding-box, linear-gradient(to right, #378377 -4.86%, rgba(176, 234, 226, 0) 105.44%) border-box;
+  border: 2px solid transparent;
+  min-height: 125px;
+  border-radius: 10px;
+  margin: 0 0 64px 0;
+}
+.meditations-list--right .meditations-list__item:first-child {
+  padding: 31px 0 10px 0;
+}
+.meditations-list--right .meditations-list__item:first-child .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 150px 0 23px;
+}
+.meditations-list--right .meditations-list__item:first-child .meditations-list__desc {
+  margin: 11px 0 0 0;
+  padding: 0 38px 0 22px;
+}
+.meditations-list--right .meditations-list__item:nth-child(2) {
+  padding: 20px 0 10px 0;
+}
+.meditations-list--right .meditations-list__item:nth-child(2) .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 150px 0 23px;
+}
+.meditations-list--right .meditations-list__item:nth-child(2) .meditations-list__desc {
+  margin: 11px 0 0 0;
+  padding: 0 38px 0 23px;
+}
+.meditations-list--right .meditations-list__item:last-child {
+  padding: 18px 0 10px 0;
+}
+.meditations-list--right .meditations-list__item:last-child .meditations-list__title {
+  margin: 0 0 0 0;
+  padding: 0 150px 0 23px;
+}
+.meditations-list--right .meditations-list__item:last-child .meditations-list__desc {
+  margin: 11px 0 0 0;
+  padding: 0 46px 0 24px;
 }
 /*# sourceMappingURL=style.css.map */
