@@ -1,0 +1,82 @@
+.transform {
+  background-color: $bgcolor;
+}
+
+.transform .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.transform__title {
+  margin: 0;
+  padding: 0 305px;
+  text-align: center;
+  width: 100%;
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.transform__desc {
+  font-family: "Arial";
+  margin: 9px 0 45px 0;
+  padding: 0 155px;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: $brown-op05;
+}
+
+.transform__img--left {
+  margin: 0 0 0 21px;
+}
+
+.transform__img--right {
+  margin: 40px 32px 0 0;
+}
+
+.transform__art {
+  max-width: 418px;
+  padding: 75px 0 0 0;
+}
+
+.transform__art + .transform__art {
+  margin: 26px 0 0 33px;
+}
+
+.transform__art-title {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.transform__art-desc {
+  padding: 0 0 0 0;
+  margin: 4px 0 0 0;
+}
+
+.transform__art-desc + .transform__art-desc {
+  padding: 0 0 0 0;
+  margin: 15px 0 0 0;
+}
+
+.transform__art-link {
+  display: inline-block;
+  margin: 19px 0 0 0;
+  padding: 9px 25px;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #259385 0%, #159685 100%);
+  box-shadow: 0 8px 17px rgba(26, 127, 114, 0.2);
+  border-radius: 19px;
+
+}
