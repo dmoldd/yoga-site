@@ -16,6 +16,17 @@
     z-index: 1;
   }
 
-  .container {
-  }
+  // .container {
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
+}
+
+.header__call {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 22px;
 }
