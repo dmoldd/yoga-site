@@ -3,7 +3,7 @@
 }
 
 .page__body {
-  font-family: "Heebo", "Arial", sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 .container {
@@ -30,12 +30,17 @@ img {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  background-image: url("../img/hero/background1200x707.svg");
+  background-repeat: no-repeat;
+  background-position: center -76px;
+  background-size: 1200px 739px;
+  background-color: $bgcolor;
 }
 
 body,
 html {
   height: 100%;
-  background-color: $white;
+  // background-color: $white;
   scroll-behavior: smooth;
 }
 

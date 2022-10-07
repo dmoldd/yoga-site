@@ -12,11 +12,18 @@
 // }
 
 .meditations-list__title {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 24px;
   margin: 20px 37px 0 0;
   padding: 0 0 0 0;
+  text-transform: uppercase;
 }
 
 .meditations-list__desc {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 15px;
   margin: 12px 0 0 0;
   padding: 0 21px 0 23px;
 }
@@ -40,7 +47,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 33px 0 150px;
+      padding: 0 33px 0 38px;
     }
 
     .meditations-list__desc {
@@ -54,7 +61,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 32px 0 150px;
+      padding: 0 32px 0 38px;
     }
 
     .meditations-list__desc {
@@ -68,7 +75,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 39px 0 150px;
+      padding: 0 39px 0 38px;
     }
 
     .meditations-list__desc {
@@ -97,7 +104,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 150px 0 23px;
+      padding: 0 38px 0 23px;
     }
 
     .meditations-list__desc {
@@ -111,7 +118,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 150px 0 23px;
+      padding: 0 38px 0 23px;
     }
 
     .meditations-list__desc {
@@ -125,7 +132,7 @@
 
     .meditations-list__title {
       margin: 0 0 0 0;
-      padding: 0 150px 0 23px;
+      padding: 0 38px 0 23px;
     }
 
     .meditations-list__desc {

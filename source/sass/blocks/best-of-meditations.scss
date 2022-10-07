@@ -1,6 +1,6 @@
 .best-of-meditations {
-  background-color: #7bc9b1;
-  margin: 165px 0 0 0;
+  // background-color: #7bc9b1;
+  margin: 0 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,20 +16,22 @@
 
 .best-of-meditations__title {
   margin: 0 0 0 0;
-  font-family: "Lobster";
-  font-weight: 400;
+  font-family: "Kyiv";
+  font-weight: 700;
   font-size: 34px;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .best-of-meditations__desc {
   margin: 18px 0 0 0;
   padding: 0 156px;
-  font-family: "Arial";
+  font-family: 'Comfortaa', cursive;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
+  width: 100%;
 }
 
 .best-of-meditations__img {

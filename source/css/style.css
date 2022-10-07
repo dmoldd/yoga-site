@@ -19,6 +19,7 @@ hr {
 
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 abbr[title] {
@@ -157,7 +158,7 @@ template {
 }
 
 .page__body {
-  font-family: "Heebo", "Arial", sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
 .container {
@@ -184,12 +185,16 @@ img {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  background-image: url("../img/hero/background1200x707.svg");
+  background-repeat: no-repeat;
+  background-position: center -76px;
+  background-size: 1200px 739px;
+  background-color: #ddf4ee;
 }
 
 body,
 html {
   height: 100%;
-  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -205,27 +210,47 @@ a {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "Kyiv";
+  src: url("../fonts/Kyiv.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  position: sticky;
+  top: 10px;
+  display: block;
+  border-radius: 20px;
+  margin: 10px 30px 10px;
+  background-color: rgba(126, 202, 192, 0.96);
+  filter: blur(0.5px);
+  z-index: 2;
+}
 .header__logo {
   position: absolute;
   margin: 2px 0 0 -2px;
+  z-index: 1;
 }
-.header .container {
-  background-color: #ffffff;
-}
-
 .nav-list {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   min-height: 81px;
-  margin: 16px 0 0 0;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 .nav-list__item {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 0 0 48px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+  margin: 0 0 0 16px;
+  color: black;
+  text-decoration: none;
+}
+.nav-list__item:first-child {
+  margin: 0;
 }
 .nav-list__item--current {
   font-weight: 500;
@@ -238,18 +263,17 @@ a {
 }
 
 .hero {
-  min-height: 740px;
-  background-image: url("../img/hero/background1200x707.png");
-  background-repeat: no-repeat;
-  background-position: center -76px;
-  background-size: 1200px 739px;
-  background-color: #ddf4ee;
+  min-height: 577px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
 }
 .hero__title {
   text-align: center;
-  font-family: "Lobster";
+  font-family: "Kyiv";
   font-size: 43px;
-  padding: 42px 234px 0;
+  padding: 0 234px 0;
   margin: 0;
   line-height: 130%;
   letter-spacing: -1px;
@@ -258,13 +282,14 @@ a {
 }
 .hero__desc {
   text-align: center;
-  font-family: "Arial";
+  font-family: "Amatic SC", cursive;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 22px;
   line-height: 26px;
   padding: 0 166px;
   margin: 12px 0 0 0;
+  color: #f9f6f6;
 }
 .hero__link {
   display: block;
@@ -285,6 +310,14 @@ a {
 
 .courses {
   background-color: #ddf4ee;
+}
+
+.courses__title {
+  font-family: "Kyiv";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  margin: 0 0 50px 0;
 }
 
 .courses-list {
@@ -362,16 +395,16 @@ a {
 }
 
 .practice__title {
-  margin: 0;
-  padding: 33px 262px 0;
+  margin: 70px auto 0;
   text-align: center;
-  font-family: "Lobster";
-  font-size: 43px;
+  font-family: "Kyiv";
+  font-size: 34px;
+  text-transform: uppercase;
 }
 
 .practice__desc {
-  padding: 0 262px 0;
-  font-family: "Arial";
+  padding: 0 133px 0;
+  font-family: "Comfortaa", cursive;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
@@ -465,17 +498,18 @@ a {
   padding: 0 0 0 0;
   text-align: center;
   width: 100%;
-  font-family: "Lobster";
-  font-size: 43px;
+  font-family: "Kyiv";
+  font-size: 34px;
+  text-transform: uppercase;
 }
 
 .sound__desc {
   text-align: center;
-  font-family: "Arial";
+  font-family: "Comfortaa", cursive;
   font-weight: 400;
   font-size: 15px;
   padding: 0 129px;
-  margin: 13px 0 0 0;
+  margin: 33px 0 20px 0;
 }
 
 .sound__img {
@@ -492,6 +526,7 @@ a {
 }
 
 .sound-list__item {
+  z-index: 1;
   position: relative;
   background: url("../img/svg/bgsong.svg") left 20px center, linear-gradient(90deg, #c3e2de 27%, #cff1ed 49%, #edfbf9 97%) padding-box, linear-gradient(90deg, #1E9787 0%, rgba(26, 127, 114, 0.38) 49%, rgba(26, 127, 114, 0.13) 73%, rgba(26, 127, 114, 0.04) 91%) border-box; /* border*/
   background-repeat: no-repeat;
@@ -532,8 +567,7 @@ a {
 }
 
 .best-of-meditations {
-  background-color: #7bc9b1;
-  margin: 165px 0 0 0;
+  margin: 0 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -549,20 +583,22 @@ a {
 
 .best-of-meditations__title {
   margin: 0 0 0 0;
-  font-family: "Lobster";
-  font-weight: 400;
+  font-family: "Kyiv";
+  font-weight: 700;
   font-size: 34px;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .best-of-meditations__desc {
   margin: 18px 0 0 0;
   padding: 0 156px;
-  font-family: "Arial";
+  font-family: "Comfortaa", cursive;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
+  width: 100%;
 }
 
 .best-of-meditations__img {
@@ -580,11 +616,18 @@ a {
 }
 
 .meditations-list__title {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 24px;
   margin: 20px 37px 0 0;
   padding: 0 0 0 0;
+  text-transform: uppercase;
 }
 
 .meditations-list__desc {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 15px;
   margin: 12px 0 0 0;
   padding: 0 21px 0 23px;
 }
@@ -605,7 +648,7 @@ a {
 }
 .meditations-list--left .meditations-list__item:first-child .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 33px 0 150px;
+  padding: 0 33px 0 38px;
 }
 .meditations-list--left .meditations-list__item:first-child .meditations-list__desc {
   margin: 13px 0 0px 0;
@@ -616,7 +659,7 @@ a {
 }
 .meditations-list--left .meditations-list__item:nth-child(2) .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 32px 0 150px;
+  padding: 0 32px 0 38px;
 }
 .meditations-list--left .meditations-list__item:nth-child(2) .meditations-list__desc {
   margin: 10px 0 0 0px;
@@ -627,7 +670,7 @@ a {
 }
 .meditations-list--left .meditations-list__item:last-child .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 39px 0 150px;
+  padding: 0 39px 0 38px;
 }
 .meditations-list--left .meditations-list__item:last-child .meditations-list__desc {
   margin: 12px 0 0 0;
@@ -650,7 +693,7 @@ a {
 }
 .meditations-list--right .meditations-list__item:first-child .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 150px 0 23px;
+  padding: 0 38px 0 23px;
 }
 .meditations-list--right .meditations-list__item:first-child .meditations-list__desc {
   margin: 11px 0 0 0;
@@ -661,7 +704,7 @@ a {
 }
 .meditations-list--right .meditations-list__item:nth-child(2) .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 150px 0 23px;
+  padding: 0 38px 0 23px;
 }
 .meditations-list--right .meditations-list__item:nth-child(2) .meditations-list__desc {
   margin: 11px 0 0 0;
@@ -672,7 +715,7 @@ a {
 }
 .meditations-list--right .meditations-list__item:last-child .meditations-list__title {
   margin: 0 0 0 0;
-  padding: 0 150px 0 23px;
+  padding: 0 38px 0 23px;
 }
 .meditations-list--right .meditations-list__item:last-child .meditations-list__desc {
   margin: 11px 0 0 0;
@@ -690,18 +733,18 @@ a {
 }
 
 .transform__title {
-  margin: 0;
-  padding: 0 305px;
+  margin: 50px 0 30px 0;
   text-align: center;
   width: 100%;
-  font-family: "Lobster";
-  font-weight: 400;
+  font-family: "Kyiv";
+  font-weight: 700;
   font-size: 34px;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 .transform__desc {
-  font-family: "Arial";
+  font-family: "Comfortaa", cursive;
   margin: 9px 0 45px 0;
   padding: 0 155px;
   font-weight: 400;
@@ -761,9 +804,25 @@ a {
   border-radius: 19px;
 }
 
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  align-self: center;
+}
+
+.main-nav--footer {
+  align-self: center;
+}
+
 .social-networks {
+  padding: 0;
   list-style-type: none;
+  align-self: center;
   display: flex;
   justify-content: center;
+  width: max-content;
 }
 /*# sourceMappingURL=style.css.map */

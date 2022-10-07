@@ -1,3 +1,11 @@
 .courses {
   background-color: $bgcolor;
 }
+
+.courses__title {
+  font-family: "Kyiv";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  margin: 0 0 50px 0;
+}

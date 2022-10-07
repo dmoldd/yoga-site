@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
     <title>Yoga</title>
 </head>
 <body class="page__body">
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <a href="#" class="header__logo">
+        <a class="header__logo" href="#">
           <img src="img/svg/site-logo87x69.svg" alt="Логотип">
         </a>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li class="nav-list__item nav-list__item--current"><a>Home</a></li>
-            <li class="nav-list__item"><a>Explore</a></li>
-            <li class="nav-list__item"><a>Classes</a></li>
-            <li class="nav-list__item"><a>About Us</a></li>
-            <li class="nav-list__item"><a>Privacy</a></li>
-            <li class="nav-list__item"><a>Services</a></li>
+            <li class="nav-list__item nav-list__item--current"><a href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a href="#2">В чем польза?</a></li>
+            <li class="nav-list__item"><a href="#3">Виды практик</a></li>
+            <li class="nav-list__item"><a href="#4">Музыка для медитаций</a></li>
+            <li class="nav-list__item"><a href="#5">Онлайн-курсы</a></li>
+            <li class="nav-list__item"><a href="#6">Занятия в студии</a></li>
           </ul>
         </nav>
       </div>
@@ -29,14 +31,50 @@
     <main class="maincontent">
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Медитация поможет Вам очистить свой организм</h1>
-          <p class="hero__desc">Разные медитативные практики, позволяют достичь внутреннего спокойствия ума и тела при полной осознанности и внимательности</p>
-          <a class="hero__link" href="#">Начать</a>
+          <h1 class="hero__title">Студия йоги Шанти-Дева</h1>
+          <p class="hero__desc">Занятия йогой помогут осознать себя счастливым, наделят старания благим смыслом и помогут развить силу сострадания. Ом!</p>
+          <!-- <a class="hero__link" href="#">Начать</a> -->
           <img src="img/svg/girl369x349.svg" alt="" class="hero__img" width="369" height="349">
         </div>
       </section>
-      <section class="courses">
+      <section class="best-of-meditations" id="2">
+        <div class="container container--short">
+          <h2 class="best-of-meditations__title">В чем польза?</h2>
+          <p class="best-of-meditations__desc">Давайте разбираться!</p>
+          <ul class="meditations-list meditations-list--left">
+            <li class="meditations-list__item">
+              <h3 class="meditations-list__title">Общее самочувствие</h3>
+              <p class="meditations-list__desc">Йога усиливает обмен веществ и регулирует гормональный баланс. Это оказывает благотворное влияние на весь организм</p>
+            </li>
+            <li class="meditations-list__item">
+              <h3 class="meditations-list__title">Правильная осанка</h3>
+              <p class="meditations-list__desc">Прорабатываются мышцы спины и укрепляется каркас. Вытягивается позвоночник, который у многих страдает от сидячего образа жизни </p>
+            </li>
+            <li class="meditations-list__item">
+              <h3 class="meditations-list__title">Профилактика болезней</h3>
+              <p class="meditations-list__desc"> Йога помогает при остеоартрите, болезнях сердца, высоком и низком кровяном давлении, диабете, астме, болезни Альцгеймера и многих других заболеваниях</p>
+            </li>
+          </ul>
+          <ul class="meditations-list meditations-list--right">
+            <li class="meditations-list__item meditations-list__item--right">
+              <h3 class="meditations-list__title">Новые знакомства</h3>
+              <p class="meditations-list__desc">С большой вероятностью обретёте новых друзей с общими интересами. Среди фанатов этого вида активности немало интересных людей</p>
+            </li>
+            <li class="meditations-list__item meditations-list__item--right">
+              <h3 class="meditations-list__title">Гармония духа и тела</h3>
+              <p class="meditations-list__desc">Медитации позволяют достичь гармонии между телом и духом, благодаря чему организм начинает функционировать максимально слаженно</p>
+            </li>
+            <li class="meditations-list__item meditations-list__item--right">
+              <h3 class="meditations-list__title">Продление молодости</h3>
+              <p class="meditations-list__desc">Занятия йогой помогают вести здоровый образ жизни. Оставайтесь молодыми и жизнерадостными до глубокой старости</p>
+            </li>
+          </ul>
+          <img class="best-of-meditations__img" src="img/svg/girl211x501.svg" alt="Девушка медитирует">
+        </div>
+      </section>
+      <section class="courses" id="3">
         <div class="container">
+          <h2 class="courses__title">Виды практик</h2>
           <ul class="courses-list">
             <li class="courses-list__item">
               <img class="courses-list__img" src="img/svg/meditation63x63.svg" alt="Картинка" width="63" height="63">
@@ -62,47 +100,10 @@
           </ul>
         </div>
       </section>
-      <section class="practice">
+      <section class="sound" id="4">
         <div class="container">
-          <h2 class="practice__title">Занимайтесь где хотите и когда хотите</h2>
-          <p class="practice__desc">Это просто. Занимаемся в свободное время, когда ничто не мешает нам делать то, что нам больше всего нравится</p>
-          <img class="practice__img" src="img/svg/girl2465x371.svg" alt="Медитирующая девушка">
-          <ul class="practice-list">
-            <li class="practice-list__item">
-              <h3 class="practice-list__title">Особенное дыхание</h3>
-              <p class="practice-list__desc">Существует множество дыхательных практик.</p>
-              <a class="practice-list__link" href="#">
-                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="practice-list__item">
-              <h3 class="practice-list__title">Снижение стресса</h3>
-              <p class="practice-list__desc">Медитативные практики позволяют избавиться от накопившегося стресса.</p>
-              <a class="practice-list__link" href="#">
-                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="practice-list__item">
-              <h3 class="practice-list__title">Сочувствие самому себе</h3>
-              <p class="practice-list__desc">Относиться к себе с заботой и добротой, как если бы вы отнеслись к другу в случае его неудачи.</p>
-              <a class="practice-list__link" href="#">
-                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-      </section>
-      <section class="sound">
-        <div class="container">
-          <h2 class="sound__title">Take a Deep Breath</h2>
-          <p class="sound__desc">“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.”</p>
+          <h2 class="sound__title">Музыка для медитаций</h2>
+          <p class="sound__desc">Для медитации идеально слушать звуки природы. Это может быть шум моря, дождя или леса, пение птиц</p>
           <ul class="sound-list">
             <li class="sound-list__item">
               <h4 class="sound-list__title">Turning off Auto Pilot</h4>
@@ -129,54 +130,56 @@
           <img class="sound__img" src="img/svg/girls435x424.svg" alt="Девушки-йогини" >
         </div>
       </section>
-      <section class="best-of-meditations">
-        <div class="container container--short">
-          <h2 class="best-of-meditations__title">The Best Of Meditation</h2>
-          <p class="best-of-meditations__desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
-          <ul class="meditations-list meditations-list--left">
-            <li class="meditations-list__item">
-              <h3 class="meditations-list__title">The Peace</h3>
-              <p class="meditations-list__desc">which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.</p>
+      <section class="practice" id="5">
+        <div class="container">
+          <h2 class="practice__title">Занимайтесь когда хотите</h2>
+          <p class="practice__desc">Наши аудио и видеокурсы помогут Вам занимаемся в свободное время, когда ничто не мешает делать то, что нам больше всего нравится</p>
+          <img class="practice__img" src="img/svg/girl2465x371.svg" alt="Медитирующая девушка">
+          <ul class="practice-list">
+            <li class="practice-list__item">
+              <h3 class="practice-list__title">Курс Джуниор</h3>
+              <p class="practice-list__desc">Вводная информация в мир йоги. Базовый набор упражнений, позволяющий составить обшее представление</p>
+              <a class="practice-list__link" href="#">
+                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
+                </svg>
+              </a>
             </li>
-            <li class="meditations-list__item">
-              <h3 class="meditations-list__title">Strength Building</h3>
-              <p class="meditations-list__desc">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore.</p>
+            <li class="practice-list__item">
+              <h3 class="practice-list__title">Курс Продвинутый</h3>
+              <p class="practice-list__desc">Этот курс подойдёт для тех, кто уже имеет маленький опыт в ойгических практиках и хочет продвинуться дальше</p>
+              <a class="practice-list__link" href="#">
+                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
+                </svg>
+              </a>
             </li>
-            <li class="meditations-list__item">
-              <h3 class="meditations-list__title">Quick Relextion</h3>
-              <p class="meditations-list__desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <li class="practice-list__item">
+              <h3 class="practice-list__title">Курс Йога-Про</h3>
+              <p class="practice-list__desc">Этот курс рассчитан на продвинутых учеников, владеющих навыками правильного дыхания, медитации и знающих основные позы в йоге (асаны)</p>
+              <a class="practice-list__link" href="#">
+                <svg class="practice-list__arrow-img" width="64" height="15" viewBox="0 0 64 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M63.6627 8.03816C64.0288 7.67205 64.0288 7.07845 63.6627 6.71234L57.6965 0.746125C57.3304 0.380008 56.7368 0.380008 56.3706 0.746125C56.0045 1.11224 56.0045 1.70583 56.3706 2.07195L61.6739 7.37525L56.3706 12.6785C56.0045 13.0447 56.0045 13.6383 56.3706 14.0044C56.7368 14.3705 57.3304 14.3705 57.6965 14.0044L63.6627 8.03816ZM0.499786 8.31274L62.9998 8.31275L62.9998 6.43775L0.499786 6.43774L0.499786 8.31274Z"/>
+                </svg>
+              </a>
             </li>
           </ul>
-          <ul class="meditations-list meditations-list--right">
-            <li class="meditations-list__item meditations-list__item--right">
-              <h3 class="meditations-list__title">Relex & Refresh</h3>
-              <p class="meditations-list__desc">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
-            </li>
-            <li class="meditations-list__item meditations-list__item--right">
-              <h3 class="meditations-list__title">Beauty Of Body</h3>
-              <p class="meditations-list__desc">Various versions have evolved over the years  sometimes by accident sometimes on purpose injected humour and the like.</p>
-            </li>
-            <li class="meditations-list__item meditations-list__item--right">
-              <h3 class="meditations-list__title">Strees Relief</h3>
-              <p class="meditations-list__desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.</p>
-            </li>
-          </ul>
-          <img class="best-of-meditations__img" src="img/svg/girl211x501.svg" alt="Девушка медитирует">
+
         </div>
       </section>
-      <section class="transform">
+      <section class="transform" id="6">
         <div class="container">
-          <h2 class="transform__title">Transform Your Body, Mind and Life Today</h2>
-          <p class="transform__desc">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos  sint occaecati cupiditate non provident.”</p>
+          <h2 class="transform__title">Совместные тренировки</h2>
+          <p class="transform__desc">Наша студия разработала курс занятий, который ведут лучшие тренеры города. Вашему вниманию представляем два тарифа: базовый и продвинутый</p>
           <img class="transform__img transform__img--left" src="img/svg/girl439x346.svg" alt="Йогиня">
           <article class="transform__art">
-            <h3 class="transform__art-title">Antistrees Meditation</h3>
+            <h3 class="transform__art-title">Базовый тариф</h3>
             <p class="transform__art-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected.</p>
             <p class="transform__art-desc">These cases are perfectly simple and easy to distinguish. In a free hour when our power of choice is untrammelled.</p>
             <a class="transform__art-link" href="#">Learn More</a>
           </article>
           <article class="transform__art">
-            <h3 class="transform__art-title">Antistrees Meditation</h3>
+            <h3 class="transform__art-title">Продвинутый тариф</h3>
             <p class="transform__art-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected.</p>
             <p class="transform__art-desc">These cases are perfectly simple and easy to distinguish. In a free hour when our power of choice is untrammelled.</p>
             <a class="transform__art-link" href="#">Learn More</a>

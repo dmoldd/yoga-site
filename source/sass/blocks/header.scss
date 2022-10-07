@@ -1,10 +1,21 @@
 .header {
+
+  position: sticky;
+  top: 10px;
+  display: block;
+  border-radius: 20px;
+  // padding: 0 5px 0;
+  // border: solid;
+  margin: 10px 30px 10px;
+  background-color: rgba(126, 202, 192, 0.96);
+  filter: blur(0.5px);
+  z-index: 2;
   &__logo {
     position: absolute;
     margin: 2px 0 0 -2px;
+    z-index: 1;
   }
 
   .container {
-    background-color: $white;
   }
 }

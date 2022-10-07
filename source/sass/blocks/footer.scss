@@ -2,12 +2,14 @@
 
 }
 
-.container {
+.footer .container {
+  display: flex;
+  flex-direction: column;
 
 }
 
 .footer__logo {
-
+  align-self: center;
 }
 
 .main-nav {
@@ -15,7 +17,7 @@
 }
 
 .main-nav--footer {
-
+  align-self: center;
 }
 
 .nav-list {
@@ -31,9 +33,12 @@
 }
 
 .social-networks {
+  padding: 0;
   list-style-type: none;
+  align-self: center;
   display: flex;
   justify-content: center;
+  width: max-content;
 }
 
 .social-networks__facebook {
