@@ -1,0 +1,138 @@
+.courses-list {
+  margin: 0;
+  padding: 0 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses-list__item {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 263px;
+  min-height: 338px;
+  border-radius: 9px;
+  box-shadow: 18px 0 26px -40px #000000, -18px 0 26px -40px #000000;
+  position: relative;
+  padding: 0 0 43px 0;
+
+  &:first-child {
+    .courses-list__curv {
+      max-width: 133%;
+      width: 200%;
+      margin: 0 0 0 55px;
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+
+  &:nth-child(2) {
+    .courses-list__curv {
+      max-width: 137%;
+      width: 200%;
+      margin: 19px 0 0 50px;
+    }
+  }
+
+  &:last-child {
+    .courses-list__curv {
+      max-width: 133%;
+      width: 200%;
+      margin: 11px 50px 0 0;
+    }
+  }
+}
+
+.courses-list__card:first-child .courses-list__item--back {
+  .courses-list__curv {
+    max-width: 133%;
+    width: 200%;
+    margin: 0 0 0 55px;
+    position: absolute;
+    bottom: -10px;
+  }
+}
+
+.courses-list__card:nth-child(2) .courses-list__item--back {
+  .courses-list__curv {
+    max-width: 133%;
+    width: 200%;
+    margin: 0 0 0 55px;
+    position: absolute;
+    bottom: -10px;
+  }
+}
+
+.courses-list__card:last-child .courses-list__item--back {
+  .courses-list__curv {
+    max-width: 133%;
+    width: 200%;
+    margin: 0 56px 0 0;
+    position: absolute;
+    bottom: -10px;
+  }
+}
+
+.courses-list__img {
+  margin: 30px 0 0 0;
+}
+
+.courses-list__title {
+  margin: 17px 0 0 0;
+}
+
+.courses-list__desc {
+  padding: 0 30px;
+  margin: 17px 0 0 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  min-height: 77px;
+}
+
+.courses-list__link {
+  margin: 16px 0 0 0;
+  background-color: $greenbutton;
+  box-shadow: 0 8px 17.5px rgba(26, 127, 114, 0.2);
+  border-radius: 18px;
+  padding: 9px 13px;
+  color: $white;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.courses-list__item--front,
+.courses-list__item--back {
+  backface-visibility: hidden;
+  transition: transform 0.6s linear;
+}
+
+.courses-list__item--back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.courses-list__item--front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.courses-list__item--back {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.courses-list__card:hover > .courses-list__item--front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.courses-list__card:hover > .courses-list__item--back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.courses-list__card {
+  position: relative;
+  list-style-type: none;
+}

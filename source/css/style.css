@@ -307,10 +307,10 @@ a {
 }
 .hero__desc {
   text-align: center;
-  font-family: "Amatic SC", cursive;
+  font-family: "Comfortaa", cursive;
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 26px;
   padding: 0 166px;
   margin: 12px 0 0 0;
@@ -353,20 +353,23 @@ a {
 }
 
 .courses-list__item {
-  display: block;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 263px;
-  height: 338px;
+  min-height: 338px;
   border-radius: 9px;
   box-shadow: 18px 0 26px -40px #000000, -18px 0 26px -40px #000000;
+  position: relative;
+  padding: 0 0 43px 0;
 }
 .courses-list__item:first-child .courses-list__curv {
   max-width: 133%;
   width: 200%;
-  margin: 11px 0 0 50px;
+  margin: 0 0 0 55px;
+  position: absolute;
+  bottom: -10px;
 }
 .courses-list__item:nth-child(2) .courses-list__curv {
   max-width: 137%;
@@ -377,6 +380,30 @@ a {
   max-width: 133%;
   width: 200%;
   margin: 11px 50px 0 0;
+}
+
+.courses-list__card:first-child .courses-list__item--back .courses-list__curv {
+  max-width: 133%;
+  width: 200%;
+  margin: 0 0 0 55px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.courses-list__card:nth-child(2) .courses-list__item--back .courses-list__curv {
+  max-width: 133%;
+  width: 200%;
+  margin: 0 0 0 55px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.courses-list__card:last-child .courses-list__item--back .courses-list__curv {
+  max-width: 133%;
+  width: 200%;
+  margin: 0 56px 0 0;
+  position: absolute;
+  bottom: -10px;
 }
 
 .courses-list__img {
@@ -407,6 +434,39 @@ a {
   font-family: "Arial";
   font-weight: 400;
   font-size: 15px;
+}
+
+.courses-list__item--front,
+.courses-list__item--back {
+  backface-visibility: hidden;
+  transition: transform 0.6s linear;
+}
+
+.courses-list__item--back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.courses-list__item--front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.courses-list__item--back {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.courses-list__card:hover > .courses-list__item--front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.courses-list__card:hover > .courses-list__item--back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.courses-list__card {
+  position: relative;
+  list-style-type: none;
 }
 
 .practice {
@@ -641,12 +701,12 @@ a {
 }
 
 .meditations-list__title {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
-  font-size: 24px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 18px;
   margin: 20px 37px 0 0;
   padding: 0 0 0 0;
-  text-transform: uppercase;
+  transition: all 0.6s;
 }
 
 .meditations-list__desc {
@@ -667,6 +727,11 @@ a {
   min-height: 125px;
   border-radius: 10px;
   margin: 0 0 64px 0;
+  transition: all 0.6s;
+}
+.meditations-list--left .meditations-list__item:hover .meditations-list__title {
+  font-size: 21px;
+  transition: all 0.6s;
 }
 .meditations-list--left .meditations-list__item:first-child {
   padding: 20px 0 10px 0;
@@ -712,6 +777,10 @@ a {
   min-height: 125px;
   border-radius: 10px;
   margin: 0 0 64px 0;
+}
+.meditations-list--right .meditations-list__item:hover .meditations-list__title {
+  font-size: 21px;
+  transition: all 0.6s;
 }
 .meditations-list--right .meditations-list__item:first-child {
   padding: 31px 0 10px 0;
@@ -796,9 +865,9 @@ a {
 }
 
 .transform__art-title {
-  font-family: "Arial";
+  font-family: "Comfortaa", cursive;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -807,6 +876,7 @@ a {
 .transform__art-desc {
   padding: 0 0 0 0;
   margin: 4px 0 0 0;
+  font-family: "Arial";
 }
 
 .transform__art-desc + .transform__art-desc {
