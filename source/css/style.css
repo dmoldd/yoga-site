@@ -288,7 +288,7 @@ a {
 }
 
 .hero {
-  min-height: 577px;
+  min-height: 524px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -343,11 +343,12 @@ a {
   text-align: center;
   font-size: 34px;
   margin: 0 0 50px 0;
+  padding: 100px 0 0 0;
 }
 
 .courses-list {
   margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -469,6 +470,18 @@ a {
   list-style-type: none;
 }
 
+.courses-list__facts {
+  padding: 31px 36px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  list-style-type: square;
+  text-align: left;
+}
+
+.courses-list__fact {
+  margin: 0 0 10px 0;
+}
+
 .practice {
   background-color: #ddf4ee;
 }
@@ -480,7 +493,8 @@ a {
 }
 
 .practice__title {
-  margin: 70px auto 0;
+  margin: 0 auto 0;
+  padding: 100px 0 0 0;
   text-align: center;
   font-family: "Kyiv";
   font-size: 34px;
@@ -579,8 +593,8 @@ a {
 }
 
 .sound__title {
-  margin: 27px 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  padding: 100px 0 0 0;
   text-align: center;
   width: 100%;
   font-family: "Kyiv";
@@ -668,6 +682,7 @@ a {
 
 .best-of-meditations__title {
   margin: 0 0 0 0;
+  padding: 100px 0 0 0;
   font-family: "Kyiv";
   font-weight: 700;
   font-size: 34px;
@@ -688,7 +703,7 @@ a {
 
 .best-of-meditations__img {
   position: absolute;
-  top: 135px;
+  top: 234px;
   left: 495px;
   width: 211px;
   height: 501px;
@@ -827,7 +842,8 @@ a {
 }
 
 .transform__title {
-  margin: 50px 0 30px 0;
+  margin: 0 0 30px 0;
+  padding: 100px 0 0 0;
   text-align: center;
   width: 100%;
   font-family: "Kyiv";
