@@ -227,33 +227,87 @@
           <img class="transform__img  transform__img--right" src="img/svg/girl478x332.svg" alt="Йогиня">
         </div>
       </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title">Остались вопросы?</h2>
+          <p class="questions__desc">Спросите наших опытных тренеров</p>
+          <form class="form user-question" action="https://echo.htmlacademy.ru/" method="post">
+
+            <label class="form__name">
+              <input class="input input--text" type="text" name="name" placeholder="Имя">
+            </label>
+
+            <label class="form__email">
+              <input class="input input--email" type="email" name="email" placeholder="Электронная почта">
+            </label>
+
+            <label class="form__phone-number">
+              <input class="input input--phone-number" type="tel" name="tel" placeholder="Номер телефона">
+            </label>
+
+            <label class="form__textarea">
+              <textarea class="input input--textarea" name="question"  rows="10" placeholder="Ваш вопрос"></textarea>
+            </label>
+
+            <input class="form__submit" type="submit" value="ОТПРАВИТЬ ВОПРОС">
+
+            <p class="form__desc">
+              * &mdash; ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
+            </p>
+          </form>
+
+        </div>
+
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="#" class="footer__logo">
-          <img src="img/svg/site-logo87x69.svg" alt="Логотип">
-        </a>
-        <nav class="main-nav main-nav--footer">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item--current"><a>Home</a></li>
-            <li class="nav-list__item"><a>Explore</a></li>
-            <li class="nav-list__item"><a>Classes</a></li>
-            <li class="nav-list__item"><a>About Us</a></li>
-            <li class="nav-list__item"><a>Privacy</a></li>
-            <li class="nav-list__item"><a>Services</a></li>
-          </ul>
-        </nav>
-        <ul class="social-networks">
-          <li class="social-networks__facebook">
-            <img src="img/svg/fb.svg" alt="">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <h4 class="footer__list-title">МЫ</h4>
+            <p class="footer__list-desc">Студия йоги Шанти-Дева — это группа единомышленников, которых объединяет здоровый образ жизни. Мы давно занимаемся йогой и делимся знаниями с людьми. Мы предлагаем вам познакомиться с учением йоги и открыть для себя путь самосовершенствования</p>
           </li>
-          <li class="social-networks__instagram">
-            <img src="img/svg/inst.svg" alt="">
+          <li class="footer__list-item">
+            <h4 class="footer__list-title">АДРЕСА</h4>
+            <p class="footer__adress">Москва. Боровицкая 17 (ТЦ Омега), вход со двора, второй этаж, офис 33
+              <a class="footer__adress-link" href="#">Открыть карту</a>
+            </p>
+            <p class="footer__adress">Санкт-Петербург. Садовая 15-б,7 (ТЦ Пик), вход рядом с метро, четвертый этаж, офис 1
+              <a class="footer__adress-link" href="#">Открыть карту</a>
+            </p>
+            <p class="footer__adress">Рязань. Проспект Ленина 89, помещение 2
+              <a class="footer__adress-link" href="#">Открыть карту</a>
+            </p>
           </li>
-          <li class="social-networks__twitter">
-            <img src="img/svg/twit.svg" alt="">
+          <li class="footer__list-item">
+            <h4 class="footer__list-title">ПАРТНЕРЫ</h4>
+            <a class="footer__partner-link" href="#">Студия "Серебрянный лотос"</a>
+            <a class="footer__partner-link" href="#">Студия "Айенгара"</a>
+            <a class="footer__partner-link" href="#">Магазин "Yogastuff"</a>
+            <a class="footer__partner-link" href="#">Благотворительный фонд "Здоровье нации"</a>
+          </li>
+          <li class="footer__list-item">
+            <h4 class="footer__list-title">СВЯЗЬ</h4>
+              <p class="footer__tel">Телефон центра - 8 (232) 546 16 64</p>
+              <p class="footer__email">Электронная почта - shantideva@gmail.com</p>
+            <h4 class="footer__list-title">СОЦИАЛЬНЫЕ СЕТИ</h4>
+            <ul class="social-networks">
+              <li class="social-networks__facebook">
+                <img src="img/svg/fb.svg" alt="">
+              </li>
+              <li class="social-networks__instagram">
+                <img src="img/svg/inst.svg" alt="">
+              </li>
+              <li class="social-networks__twitter">
+                <img src="img/svg/twit.svg" alt="">
+              </li>
+            </ul>
           </li>
         </ul>
+        <article class="footer__down">
+          <p class="footer__desc">&#169 2022, Все права защищены</p>
+          <p class="footer__develop">Разработано <a class="footer__developer-name" href="#">Дмитрием Кучерявым</a></p>
+        </article>
       </div>
     </footer>
   </div>

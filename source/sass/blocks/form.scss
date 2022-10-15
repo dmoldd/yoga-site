@@ -1,0 +1,58 @@
+.form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-areas: "A B" "C B" "D B" "E E" "F F";
+}
+
+.form__name {
+  display: block;
+  grid-area: A;
+  height: 50px;
+  padding: 0 30px 0;
+  margin: 0 0 30px 0;
+}
+
+.form__email {
+  display: block;
+  grid-area: C;
+  height: 50px;
+  padding: 0 30px 0;
+  margin: 0 0 30px 0;
+}
+
+.form__phone-number {
+  display: block;
+  grid-area: D;
+  height: 50px;
+  padding: 0 30px 0;
+  margin: 0 0 30px 0;
+}
+
+.form__textarea {
+  display: block;
+  grid-area: B;
+  padding: 0 30px 30px;
+}
+
+.form__submit {
+  display: block;
+  grid-area: E;
+  margin: 20px 340px 0;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #259385 0%, #159685 100%);
+  border-radius: 70px;
+  border: none;
+}
+
+.form__desc {
+  grid-area: F;
+  text-align: end;
+  font-weight: 400;
+  font-size: 13px;
+}
